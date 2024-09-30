@@ -1,26 +1,26 @@
 --baitap1
-SELECT NAME FROM CITY 
-WHERE COUNTRYCODE='USA' AND POPULATION>120000
+SELECT name FROM city 
+WHERE countrycode='USA' AND population>120000
 --baitap2
-SELECT * FROM CITY 
-WHERE COUNTRYCODE='JPN'
+SELECT * FROM city 
+WHERE countrycode ='JPN'
 --baitap3
-SELECT CITY,STATE FROM STATION
+SELECT city,state FROM station
 --baitap4
-SELECT DISTINCT CITY FROM STATION 
-WHERE LEFT(CITY, 1) IN ('A', 'E', 'U', 'I', 'O')
+SELECT DISTINCT city FROM station
+WHERE LEFT(city, 1) IN ('A', 'E', 'U', 'I', 'O')
 --baitap5
-SELECT DISTINCT CITY FROM STATION 
-WHERE RIGHT(CITY, 1) IN ('A', 'E', 'U', 'I', 'O')
+SELECT DISTINCT city FROM station 
+WHERE RIGHT(city, 1) IN ('A', 'E', 'U', 'I', 'O')
 --baitap6
-SELECT DISTINCT CITY FROM STATION 
-WHERE LEFT(CITY, 1) NOT IN ('A', 'E', 'U', 'I', 'O')
+SELECT DISTINCT city FROM station 
+WHERE LEFT(city, 1) NOT IN ('A', 'E', 'U', 'I', 'O')
 --baitap7
-SELECT NAME FROM EMPLOYEE
-ORDER BY NAME ASC
+SELECT name FROM employee
+ORDER BY name ASC
 --baitap8
-SELECT NAME FROM EMPLOYEE
-WHERE SALARY >2000 AND MONTHS <10
+SELECT name FROM employee
+WHERE salary >2000 AND months <10
 ORDER BY EMPLOYEE_ID
 --baitap9
 SELECT product_id FROM Products
