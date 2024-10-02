@@ -1,9 +1,8 @@
 --baitap1
-
+select distinct city from station
+where id%2=0
 --baitap2
-
---baitap3
-
+select (count(city) - count(distinct city)) from station
 --baitap4
 
 --baitap5
